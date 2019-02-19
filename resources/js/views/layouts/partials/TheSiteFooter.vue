@@ -1,10 +1,16 @@
 <template>
   <footer class="site-footer">
     <div class="text-right">
-      Powered by
-      <a href="http://bytefury.com/" target="_blank">
-        Bytefury
-      </a>
+      Groetjes van Ruben en jeff
     </div>
   </footer>
 </template>
+
+<style lang="scss">
+  .site-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
