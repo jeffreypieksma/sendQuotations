@@ -1,15 +1,15 @@
 <template>
   <div class="main-content">
     <div class="page-header">
-      <h3 class="page-title">Users</h3>
+      <h3 class="page-title">Clients</h3>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Users</a></li>
-        <li class="breadcrumb-item active">Users</li>
+        <li class="breadcrumb-item"><a href="#">clients</a></li>
+        <li class="breadcrumb-item active">Clients</li>
       </ol>
       <div class="page-actions">
         <a href="#" class="btn btn-primary">
-          <i class="icon-fa icon-fa-plus"/> New User
+          <i class="icon-fa icon-fa-plus"/> New Client
         </a>
         <button class="btn btn-danger">
           <i class="icon-fa icon-fa-trash"/> Delete

@@ -21,6 +21,22 @@
               Finance
             </router-link>
           </v-collapse-item>
+          <!-- Custom items -->
+          <v-collapse-item active-url="/admin/clients">
+            <a slot="item-title" href="#">
+              <i class="icon-fa icon-fa-user"/>Clients
+              <span class="icon-fa arrow icon-fa-fw"/>
+            </a>
+
+            <router-link to="/admin/clients">
+              All
+            </router-link>
+
+            <router-link to="/admin/client/create">
+              Create new client
+            </router-link>
+
+          </v-collapse-item>
 
           <v-collapse-item active-url="/admin/layouts">
             <a slot="item-title" href="#">
