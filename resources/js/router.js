@@ -8,11 +8,6 @@ import AuthService from './services/auth'
  |--------------------------------------------------------------------------|
  */
 
-// Dashboard
-import Basic from './views/admin/dashboard/Basic.vue'
-import Ecommerce from './views/admin/dashboard/Ecommerce.vue'
-import Finance from './views/admin/dashboard/Finance.vue'
-
 // Layouts
 import LayoutBasic from './views/layouts/LayoutBasic.vue'
 import LayoutHorizontal from './views/layouts/LayoutHorizontal.vue'
@@ -139,32 +134,32 @@ const routes = [
       },
       {
         path: 'clients',
-        component: ClientList,
+        component: Users,
         name: 'client-index'
       },
       {
         path: 'client/:id',
-        component: SingleClient,
+        component: Users,
         name: 'client'
       },
       {
         path: 'client/create',
-        component: CreateClient,
+        component: Users,
         name: 'client-create'
       },
       {
         path: 'files',
-        component: FileSendList,
+        component: Users,
         name: 'file-index'
       },
       {
         path: 'file/create',
-        component: CreateFile,
+        component: Users,
         name: 'file-create'
       },
       {
         path: 'file/:id',
-        component: SingleFile,
+        component: Users,
         name: 'file'
       }
     ]
