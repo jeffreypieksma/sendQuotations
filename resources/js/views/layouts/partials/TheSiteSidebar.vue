@@ -239,6 +239,17 @@
             </router-link>
           </v-collapse-item>
 
+          <v-collapse-item active-url="/admin/clients/all">
+            <a slot="item-title" href="#">
+              <i class="icon-fa icon-fa-user"/>Clients
+              <span class="icon-fa arrow icon-fa-fw"/>
+            </a>
+
+            <router-link to="/admin/clients/all">
+              All Users
+            </router-link>
+          </v-collapse-item>
+
           <v-collapse-item active-url="/admin/apps">
             <a slot="item-title" href="#">
               <i class="icon-fa icon-fa-adn"/>Apps

@@ -69,6 +69,10 @@ import MailboxApp from './views/admin/apps/mailbox/MailboxApp.vue'
 import Users from './views/admin/users/Users.vue'
 import Profile from './views/admin/users/Profile.vue'
 
+// Clients
+import Clients from './views/admin/clients/Clients.vue'
+import Client from './views/admin/clients/Client.vue'
+
 // Settings
 import Settings from './views/admin/Settings.vue'
 
@@ -305,6 +309,15 @@ const routes = [
       {
         path: 'users/all',
         component: Users
+      },
+      //Clients
+      {
+        path: 'clients/all',
+        component: Clients
+      },
+      {
+        path: 'clients/view/:id',
+        component: Client
       },
 
       // Apps
