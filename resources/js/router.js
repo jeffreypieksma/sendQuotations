@@ -137,6 +137,36 @@ const routes = [
         component: Dashboard,
         name: 'dashboard'
       },
+      {
+        path: 'clients',
+        component: ClientList,
+        name: 'client-index'
+      },
+      {
+        path: 'client/:id',
+        component: SingleClient,
+        name: 'client'
+      },
+      {
+        path: 'client/create',
+        component: CreateClient,
+        name: 'client-create'
+      },
+      {
+        path: 'files',
+        component: FileSendList,
+        name: 'file-index'
+      },
+      {
+        path: 'file/create',
+        component: CreateFile,
+        name: 'file-create'
+      },
+      {
+        path: 'file/:id',
+        component: SingleFile,
+        name: 'file'
+      }
     ]
   },
   {
