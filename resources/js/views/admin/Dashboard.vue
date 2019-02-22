@@ -26,14 +26,14 @@
                 label=""
               >
                 <template slot-scope="row">
-                <div class="table__actions float-right">
-                  <a class="btn btn-default btn-sm" href="/admin/conversations/243/edit">
-                  Edit
-                  </a>
-                  <a class="btn btn-default btn-sm" href="/admin/conversations/243/edit">
-                  Delete
-                  </a>
-                </div>
+                  <div class="table__actions float-right">
+                    <a class="btn btn-default btn-sm" href="/admin/conversations/243/edit">
+                    Edit
+                    </a>
+                    <a class="btn btn-default btn-sm" href="/admin/conversations/243/edit">
+                    Delete
+                    </a>
+                  </div>
                 </template>
               </table-column>
             </table-component>
@@ -62,14 +62,14 @@
                 label=""
               >
                 <template slot-scope="row">
-                <div class="table__actions float-right">
-                  <a class="btn btn-default btn-sm" href="/admin/conversations/243/edit">
-                  Edit
-                  </a>
-                  <a class="btn btn-default btn-sm" href="/admin/conversations/243/edit">
-                  Delete
-                  </a>
-                </div>
+                  <div class="table__actions float-right">
+                    <a class="btn btn-default btn-sm" href="/admin/conversations/243/edit">
+                    Edit
+                    </a>
+                    <a class="btn btn-default btn-sm" href="/admin/conversations/243/edit">
+                    Delete
+                    </a>
+                  </div>
                 </template>
               </table-column>
             </table-component>
@@ -98,14 +98,14 @@
                 label=""
               >
                 <template slot-scope="row">
-                <div class="table__actions float-right">
-                  <a class="btn btn-default btn-sm" href="/admin/conversations/243/edit">
-                  Edit
-                  </a>
-                  <a class="btn btn-default btn-sm" href="/admin/conversations/243/edit">
-                  Delete
-                  </a>
-                </div>
+                  <div class="table__actions float-right">
+                    <a class="btn btn-default btn-sm" href="/admin/conversations/243/edit">
+                    Edit
+                    </a>
+                    <a class="btn btn-default btn-sm" href="/admin/conversations/243/edit">
+                    Delete
+                    </a>
+                  </div>
                 </template>
               </table-column>
             </table-component>

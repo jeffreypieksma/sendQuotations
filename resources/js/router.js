@@ -139,6 +139,22 @@ const routes = [
       },
     ]
   },
+  {
+    path: '/',
+    component: LayoutLogin,
+    children: [
+      {
+        path: 'login',
+        component: Login,
+        name: 'login'
+      },
+      {
+        path: 'register',
+        component: Register,
+        name: 'register'
+      }
+    ]
+  },
 
   //  DEFAULT ROUTE
   { path: '*', component: NotFoundPage }
