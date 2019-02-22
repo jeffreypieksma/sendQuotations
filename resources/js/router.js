@@ -82,6 +82,13 @@ import Settings from './views/admin/Settings.vue'
  |--------------------------------------------------------------------------|
  */
 
+//Clients
+import Client from './views/admin/clients/Client.vue'
+import Clients from './views/admin/clients/Clients.vue'
+//import CreateClient from './views/cients/CreateClient.vue'
+
+//File sender 
+
 // Auth
 import Login from './views/auth/Login.vue'
 import Register from './views/auth/Register.vue'
@@ -401,6 +408,23 @@ const routes = [
       {
         path: 'register-3',
         component: Register
+      }
+    ]
+  },  
+  /**
+    Custom Routes
+  */
+  {
+    path: '/admin/clients',
+    component: Clients,
+    children: [
+      {
+        path: '/list',
+        component: Clients
+      },
+      {
+        path: '/create',
+        component: Clients
       }
     ]
   },
