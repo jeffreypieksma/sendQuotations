@@ -5,7 +5,7 @@
       <div class="col-lg-12 col-xl-6 mt-2">
         <div class="card">
           <div class="card-header">
-            <h6><i class="icon-fa icon-fa-user text-warning"/>Klanten</h6>
+            <h6><i class="icon-fa icon-fa-user text-warning"/>Clients</h6>
           </div>
           <div class="card-body">
             <table-component
@@ -43,7 +43,7 @@
       <div class="col-lg-12 col-xl-3 mt-2">
         <div class="card">
           <div class="card-header">
-            <h6><i class="icon-fa icon-fa-paper-plane-o text-success"/>Uitgaande offertes</h6>
+            <h6><i class="icon-fa icon-fa-paper-plane-o text-success"/>Outgoing agreements</h6>
           </div>
           <div class="card-body">
             <table-component
@@ -79,7 +79,7 @@
       <div class="col-lg-12 col-xl-3 mt-2">
         <div class="card">
           <div class="card-header">
-            <h6><i class="icon-fa icon-fa-check-square-o text-success"/>Geaccepteerde offertes</h6>
+            <h6><i class="icon-fa icon-fa-check-square-o text-success"/>Accepted agreements</h6>
           </div>
           <div class="card-body">
             <table-component
