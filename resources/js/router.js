@@ -72,6 +72,8 @@ import Profile from './views/admin/users/Profile.vue'
 // Clients
 import Clients from './views/admin/clients/Clients.vue'
 import Client from './views/admin/clients/Client.vue'
+import CreateClient from './views/admin/clients/Create.vue'
+
 
 // Settings
 import Settings from './views/admin/Settings.vue'
@@ -314,6 +316,10 @@ const routes = [
       {
         path: 'clients/all',
         component: Clients
+      },
+      {
+        path: 'clients/create',
+        component: CreateClient
       },
       {
         path: 'clients/view/:id',
