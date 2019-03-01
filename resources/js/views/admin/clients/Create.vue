@@ -5,10 +5,17 @@
             <div class="row">
                 <div class="col-md-6 col-s-12">
                     <form>
-                        <div class="form-group" :class="{ 'has-error': $v.name.$error }">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Name" v-model="name">
-                            <div class="error" v-if="!$v.name.required">Field is required</div>
+                        <div class="form-group" :class="{ 'has-error': $v.firstname.$error }">
+                            <label for="name">Firstname</label>
+                            <input type="text" class="form-control" id="name" placeholder="firstname" v-model="firstname">
+                            <div class="error" v-if="!$v.firstname.required">Field is required</div>
+                            <div class="error" v-if="!$v.firstname.maxLength">Firstname must have at most {{$v.firstname.$params.maxLength.max}} letters.</div>
+                        </div>
+                        <div class="form-group" :class="{ 'has-error': $v.lastname.$error }">
+                            <label for="name">Lastname</label>
+                            <input type="text" class="form-control" id="name" placeholder="Lastname" v-model="lastname">
+                            <div class="error" v-if="!$v.lastname.required">Field is required</div>
+                            <div class="error" v-if="!$v.lastname.maxLength">Lastname must have at most {{$v.lastname.$params.maxLength.max}} letters.</div>
                         </div>
                         <div class="form-group" :class="{ 'has-error': $v.email.$error }">
                             <label for="email">Email</label>
@@ -31,7 +38,7 @@
 
 <script>
 import { Tabs, Tab } from 'vue-tabs-component'
-import { required, minLength, between, email } from 'vuelidate/lib/validators'
+import { required, minLength, maxLength, between, email } from 'vuelidate/lib/validators'
 import axios from "axios";
 
 export default {
@@ -41,15 +48,20 @@ export default {
   },
   data() {
     return {
-      name: '',
-      email: '',
-      submitStatus: null,
-      formSubmit: false
+        firstname: '',
+        lastname: '',
+        email: '',
+        submitStatus: null,
     }
   },
   validations: {
-    name: {
-      required
+    firstname: {
+      required,
+       maxLength: maxLength(60)
+    },
+     lastname: {
+      required,
+      maxLength: maxLength(60)
     },
     email: {
       required,
