@@ -370,7 +370,7 @@ const routes = [
 
   {
     path: '/',
-    component: LayoutLogin,
+    component: LayoutLogin3,
     children: [
       {
         path: 'login',
@@ -385,49 +385,6 @@ const routes = [
     ]
   },
 
-  // Demo Pages
-  {
-    path: '/admin/pages',
-    component: LayoutLogin,
-    children: [
-      {
-        path: 'login',
-        component: Login
-      },
-      {
-        path: 'register',
-        component: Register
-      }
-    ]
-  },
-  {
-    path: '/admin/pages',
-    component: LayoutLogin2,
-    children: [
-      {
-        path: 'login-2',
-        component: Login
-      },
-      {
-        path: 'register-2',
-        component: Register
-      }
-    ]
-  },
-  {
-    path: '/admin/pages',
-    component: LayoutLogin3,
-    children: [
-      {
-        path: 'login-3',
-        component: Login
-      },
-      {
-        path: 'register-3',
-        component: Register
-      }
-    ]
-  },  
   //  DEFAULT ROUTE
   { path: '*', component: NotFoundPage }
 ]
