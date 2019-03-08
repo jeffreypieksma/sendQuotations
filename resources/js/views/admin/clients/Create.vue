@@ -26,9 +26,8 @@
                         <div class="form-group">
                             <button type="button" class="btn btn-primary" v-on:click="submit">Create</button>
                         </div>
-                        <p class="submission" v-if="submitStatus === 'OK'">Thanks for your submission!</p>
                         <p class="submission" v-if="submitStatus === 'ERROR'">Please fill the form correctly.</p>
-                        <p class="submission" v-if="submitStatus === 'PENDING'">Sending...</p>
+                        <p class="submission" v-if="submitStatus === 'OK'">Succesfull added client</p>
                     </form>
                 </div>
             </div>
@@ -48,20 +47,20 @@ export default {
   },
   data() {
     return {
-        firstname: '',
-        lastname: '',
-        email: '',
-        submitStatus: null,
+        firstname: null,
+        lastname: null,
+        email: null,
+        submitStatus: null
     }
   },
   validations: {
     firstname: {
       required,
-       maxLength: maxLength(60)
+       maxLength: maxLength(100)
     },
      lastname: {
       required,
-      maxLength: maxLength(60)
+      maxLength: maxLength(100)
     },
     email: {
       required,
@@ -69,23 +68,25 @@ export default {
     }
   },
   methods: {
-      submit() {
-        this.formSubmit = true
+    submit() {
         this.$v.$touch()
+        let succesMsg = this;
+
         if (this.$v.$invalid) {
             this.submitStatus = 'ERROR'
         } else {
-            axios.post('/api/client', {
-                name: this.name,
+            let url = '/api/admin/clients/create'
+            axios.post(url, {
+                firstname: this.firstname,
+                lastname: this.lastname,
                 email: this.email
             })
             .then(function (response) {
-                console.log(response);
+                succesMsg = response.data.message
             })
             .catch(function (error) {
-                console.log(error);
+              
             });
-
             this.submitStatus = 'PENDING'
             setTimeout(() => {
                 this.submitStatus = 'OK'

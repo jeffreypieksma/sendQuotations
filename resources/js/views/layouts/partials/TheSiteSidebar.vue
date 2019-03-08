@@ -21,19 +21,37 @@
               Finance
             </router-link>
           </v-collapse-item>
-          <!-- Custom items -->
+
+          <!-- Clients -->
           <v-collapse-item active-url="/admin/clients">
             <a slot="item-title" href="#">
               <i class="icon-fa icon-fa-user"/>Clients
               <span class="icon-fa arrow icon-fa-fw"/>
             </a>
 
-            <router-link to="/admin/clients">
-              All
+            <router-link to="/admin/clients/all">
+              All Clients
             </router-link>
 
-            <router-link to="/admin/client/create">
+            <router-link to="/admin/clients/create">
               Create new client
+            </router-link>
+
+          </v-collapse-item>
+
+          <!-- Quotations -->
+          <v-collapse-item active-url="/admin/quotations">
+            <a slot="item-title" href="#">
+              <i class="icon-fa icon-fa-folder-o"/>Quotations
+              <span class="icon-fa arrow icon-fa-fw"/>
+            </a>
+
+            <router-link to="/admin/quotations/all">
+              All Quotations
+            </router-link>
+
+            <router-link to="/admin/quotations/create">
+              Create new quotation
             </router-link>
 
           </v-collapse-item>
@@ -262,7 +280,7 @@
             </a>
 
             <router-link to="/admin/clients/all">
-              All Users
+              All Clients
             </router-link>
           </v-collapse-item>
 

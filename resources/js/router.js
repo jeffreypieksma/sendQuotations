@@ -325,6 +325,20 @@ const routes = [
         path: 'clients/view/:id',
         component: Client
       },
+      //Quotations
+      {
+        path: 'quotations/all',
+        component: Quotation
+      },
+      {
+        path: 'quotations/create',
+        component: CreateQuotation
+      },
+      {
+        path: 'quotations/view/:id',
+        component: Quotation
+      },
+
 
       // Apps
       {

@@ -54,5 +54,24 @@ Route::group(['prefix' => 'admin', 'middleware' => 'api.auth'], function (){
 
     });
 
+    Route::group(['prefix' => 'clients'], function (){
+        Route::post('/create',[
+            'as' => 'admin.clients.create', 'uses' => 'ClientsController@create'
+        ]);
+
+        Route::get('/all',[
+            'as' => 'admin.clients.index', 'uses' => 'ClientsController@index'
+        ]);
+
+        Route::get('/read/{id}',[
+            'as' => 'admin.clients.read', 'uses' => 'ClientsController@read'
+        ]);
+
+        Route::delete('/delete/{id}',[
+            'as' => 'admin.users.delete', 'uses' => 'ClientsController@delete'
+        ]);
+
+    });
+
 });
 

@@ -52,6 +52,18 @@ export default {
         this.client = client
 
       },
+
+      getData() {
+        const id = this.$route.params.id
+        console.log(id)
+        axios.get('/admin/clients/read/1')
+        .then(function (response) {
+            console.log(response)
+        })
+        .catch(function (error) {
+            console.log(error)
+        });
+      },
       async update() {
           console.log('yeahhh')
       },
@@ -61,8 +73,8 @@ export default {
   },
 
   mounted() {
-    this.getClient()
-
+    //this.getClient()
+    this.getData()
   }
 }
 </script>
