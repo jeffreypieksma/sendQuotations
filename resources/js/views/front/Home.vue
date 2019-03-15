@@ -58,13 +58,14 @@
           <div class="card sub">
             <div class="card-body sub-title">
               <h5 class="card-title">Demo</h5>
+              <p class="card-subtitle">Free!</p>
             </div>
             <div class="card-body sub-list">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">10 sends</li>
                 <li class="list-group-item">Easy access</li>
                 <li class="list-group-item">No ads</li>
-                <li class="list-group-item">Geen verzendkosten</li>
+                <li class="list-group-item">Very limited support</li>
               </ul>
             </div>
             <div class="card-footer">
@@ -77,13 +78,14 @@
           <div class="card sub">
             <div class="card-body sub-title">
               <h5 class="card-title">Subscription 1</h5>
+              <p class="card-subtitle">€5/month</p>
             </div>
             <div class="card-body sub-list">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">10 sends</li>
+                <li class="list-group-item">20 monthly sends</li>
                 <li class="list-group-item">Easy access</li>
                 <li class="list-group-item">No ads</li>
-                <li class="list-group-item">Geen verzendkosten</li>
+                <li class="list-group-item">Limited support</li>
               </ul>
             </div>
             <div class="card-footer">
@@ -96,13 +98,14 @@
           <div class="card sub">
             <div class="card-body sub-title">
               <h5 class="card-title">Subscription 2</h5>
+              <p class="card-subtitle">€20/month</p>
             </div>
             <div class="card-body sub-list">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">10 sends</li>
+                <li class="list-group-item">Unlimited sends</li>
                 <li class="list-group-item">Easy access</li>
                 <li class="list-group-item">No ads</li>
-                <li class="list-group-item">Geen verzendkosten</li>
+                <li class="list-group-item">Full-time support</li>
               </ul>
             </div>
             <div class="card-footer">

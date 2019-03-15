@@ -149,6 +149,10 @@ p{
         
         .sub-title{
             background: #2F8ED2;
+
+            .card-subtitle{
+                font-style: italic;
+            }
         }
         
         .sub-list>.list-group>.list-group-item{

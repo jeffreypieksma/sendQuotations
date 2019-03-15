@@ -28880,6 +28880,10 @@ p {
   background: #2F8ED2;
 }
 
+.pricing .sub .sub-title .card-subtitle {
+  font-style: italic;
+}
+
 .pricing .sub .sub-list > .list-group > .list-group-item {
   color: #222;
 }
