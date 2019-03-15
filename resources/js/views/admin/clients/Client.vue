@@ -15,7 +15,7 @@
                     </div>
                     <div class="form-group">
                         <button type="button" class="btn btn-danger" v-on:click="deleteClient">Delete</button>
-                        <button type="button" class="btn btn-primary" v-on:click="update">Update</button>
+                        <button type="button" class="btn btn-primary" v-on:click="updateClient">Update</button>
                     </div>
                 </form>
             </div>
@@ -64,7 +64,7 @@ export default {
             console.log(error)
         });
       },
-      async update() {
+      async updateClient() {
           console.log('yeahhh')
       },
       async deleteClient() {

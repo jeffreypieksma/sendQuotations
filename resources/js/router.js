@@ -69,6 +69,10 @@ import Clients from './views/admin/clients/Clients.vue'
 import Client from './views/admin/clients/Client.vue'
 import CreateClient from './views/admin/clients/Create.vue'
 
+// Quotations
+import Quotations from './views/admin/quotations/Quotations.vue'
+import Quotation from './views/admin/quotations/Quotation.vue'
+import CreateQuotation from './views/admin/quotations/Create.vue'
 
 // Settings
 import Settings from './views/admin/Settings.vue'
