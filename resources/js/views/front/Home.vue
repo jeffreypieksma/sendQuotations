@@ -113,7 +113,7 @@
 
       </div>
 
-      <div class="row banner-bottom">
+      <div class="row middle-divider">
         <div class="col-4 banner-bottom-section">
 
           <div class="illustration">
