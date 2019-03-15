@@ -15,9 +15,10 @@ class CreateManagerTable extends Migration
     {
         Schema::create('manager', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
             $table->integer('client_id');
             $table->smallInteger('status');
-            $table->smallInteger('accepted');
+            $table->smallInteger('accepted')->nullable();
             $table->timestamps();
         });
     }
