@@ -73,5 +73,24 @@ Route::group(['prefix' => 'admin', 'middleware' => 'api.auth'], function (){
 
     });
 
+    Route::group(['prefix' => 'quotations'], function (){
+        Route::post('/create',[
+            'as' => 'admin.quotations.create', 'uses' => 'QuotationController@create'
+        ]);
+
+        Route::get('/all',[
+            'as' => 'admin.quotations.index', 'uses' => 'QuotationController@index'
+        ]);
+
+        Route::get('/read/{id}',[
+            'as' => 'admin.quotations.read', 'uses' => 'QuotationController@read'
+        ]);
+
+        Route::delete('/delete/{id}',[
+            'as' => 'admin.quotations.delete', 'uses' => 'QuotationController@delete'
+        ]);
+
+    });
+
 });
 
