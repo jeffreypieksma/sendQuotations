@@ -8,14 +8,15 @@
       </v-dropdown>
 
       <v-dropdown active-url="/admin/clients">
-        <router-link slot="activator" to="/admin/clients">
+        <router-link slot="activator" to="/admin/clients/all">
           <i class="icon-fa icon-fa-user"/>Clients
         </router-link>
+        
       </v-dropdown>
 
-      <v-dropdown active-url="/admin/files">
-        <router-link slot="activator" to="/admin/clients">
-          <i class="icon-fa icon-fa-file"/>Files
+      <v-dropdown active-url="/admin/quotations/all">
+        <router-link slot="activator" to="/admin/quotations/all">
+          <i class="icon-fa icon-fa-file"/>Quotations
         </router-link>
       </v-dropdown>
 
