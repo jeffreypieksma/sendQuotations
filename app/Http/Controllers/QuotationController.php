@@ -7,8 +7,8 @@ use Validator;
 
 use App\Client;
 use App\Manager;
-use App\Files;
-use App\Mails;
+use App\File;
+use App\Mailer;
 
 class QuotationController extends Controller
 {
@@ -42,23 +42,35 @@ class QuotationController extends Controller
 
             $manager = new Manager();
             $manager->user_id = $uid;
+            $manager->client_id = $request->client_id;
+            $manager->status = 1;
             $manager->save();
-
-            $files = new Files();
-            $files->user_id = $uid;
-            $files->save();       
             
-            $mails = new Mails();
-            $mails->user_id = $uid;
-            $mails->manager_id = $manager->id;
-            $mails->subject = $request->subject;
-            $mails->message = $request->message;
-            $mails->send = 0; 
-            $mails->save();
+            $mailer = new Mailer();
+            $mailer->user_id = $uid;
+            $mailer->manager_id = $manager->id;
+            $mailer->subject = ' subject';
+            $mailer->message = ' message' ;
+            $mailer->receiver_email = $request->client_email;
+            $mailer->send = 0; 
+            $mailer->save();
+
+            $files = new File();
+            $files->user_id = $uid;
+            $files->subject = 'subject';
+            $files->name = 'name';
+            $files->path = '/path';
+            $files->extension = 'png';
+            $files->size = 9876;
+            $files->visibility = 1;
+            $files->manager_id = $manager->id;
+            $files->save();       
     
             return response()->json([
                 'message' => 'Quotation created Successfully',
-                'quotation' => $quotation
+                'quotation' => $manager,
+                'mailer' => $mailer,
+                'files' => $files
             ],200);
         }
 
