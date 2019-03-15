@@ -15,7 +15,7 @@
       </div>
 
       <div class="row banner-bottom">
-        <div class="col-4 banner-bottom-section">
+        <div class="col-xl-4 col-md-12 banner-bottom-section">
 
           <div class="illustration">
 
@@ -23,11 +23,11 @@
 
           <div class="text">
             <h4>Access limitation</h4>
-            <p>You have some files to show someone, but only if they accept an agreement, like an NDA, or a quotation.</p>
+            <p>You have files to show people, but only if they accept an agreement like an NDA or quotation.</p>
           </div>
           
         </div>
-        <div class="col-4 banner-bottom-section">
+        <div class="col-xl-4 col-md-12 banner-bottom-section">
 
           <div class="illustration">
             
@@ -39,7 +39,7 @@
           </div>
 
         </div>
-        <div class="col-4 banner-bottom-section">
+        <div class="col-xl-4 col-md-12 banner-bottom-section">
 
           <div class="illustration">
             
@@ -54,7 +54,7 @@
 
       <div class="row pricing">
 
-        <div class="col-2">
+        <div class="col-xl-2 col-md-12">
           <div class="card sub">
             <div class="card-body sub-title">
               <h5 class="card-title">Demo</h5>
@@ -73,10 +73,10 @@
           </div>
         </div>
 
-        <div class="col-2">
+        <div class="col-xl-2 col-md-12">
           <div class="card sub">
             <div class="card-body sub-title">
-              <h5 class="card-title">Demo</h5>
+              <h5 class="card-title">Subscription 1</h5>
             </div>
             <div class="card-body sub-list">
               <ul class="list-group list-group-flush">
@@ -92,10 +92,10 @@
           </div>
         </div>
 
-        <div class="col-2">
+        <div class="col-xl-2 col-md-12">
           <div class="card sub">
             <div class="card-body sub-title">
-              <h5 class="card-title">Demo</h5>
+              <h5 class="card-title">Subscription 2</h5>
             </div>
             <div class="card-body sub-list">
               <ul class="list-group list-group-flush">
@@ -114,7 +114,7 @@
       </div>
 
       <div class="row middle-divider">
-        <div class="col-4 banner-bottom-section">
+        <div class="col-xl-4 col-md-12 banner-bottom-section">
 
           <div class="illustration">
 
@@ -126,7 +126,7 @@
           </div>
           
         </div>
-        <div class="col-4 banner-bottom-section">
+        <div class="col-xl-4 col-md-12 banner-bottom-section">
 
           <div class="illustration">
             
@@ -138,7 +138,7 @@
           </div>
 
         </div>
-        <div class="col-4 banner-bottom-section">
+        <div class="col-xl-4 col-md-12 banner-bottom-section">
 
           <div class="illustration">
             

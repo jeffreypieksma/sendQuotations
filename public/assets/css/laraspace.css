@@ -28859,7 +28859,7 @@ p {
 }
 
 .pricing {
-  height: 70vh;
+  min-height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28868,6 +28868,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 3rem 0 2rem 0;
 }
 
 .pricing .sub {
@@ -28889,7 +28890,6 @@ p {
 
 .middle-divider::before {
   content: ' ';
-  background-image: url("/assets/img/middlebottomblack.png");
   background-size: 100vw 100%;
   position: absolute;
   top: -40px;
@@ -28901,7 +28901,6 @@ p {
 
 .middle-divider::after {
   content: ' ';
-  background-image: url("/assets/img/bannerbottomblack.png");
   background-size: 100vw 100%;
   position: absolute;
   bottom: -40px;

@@ -137,10 +137,11 @@ p{
 }
 
 .pricing{
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     align-content: center;
     justify-content: center;
+    padding: 3rem 0 2rem 0;
     
     .sub{
         border: 5px solid #2F8ED2;
@@ -161,7 +162,7 @@ p{
 
     &::before{
         content: ' ';
-        background-image: url('~/assets/img/middlebottomblack.png');
+        // background-image: url('~/assets/img/middlebottomblack.png');
         background-size: 100vw 100%;
         position: absolute;
         top: -40px;
@@ -173,7 +174,7 @@ p{
     
     &::after{
         content: ' ';
-        background-image: url('~/assets/img/bannerbottomblack.png');
+        // background-image: url('~/assets/img/bannerbottomblack.png');
         background-size: 100vw 100%;
         position: absolute;
         bottom: -40px;
