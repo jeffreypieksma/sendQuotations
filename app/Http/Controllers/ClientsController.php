@@ -37,7 +37,7 @@ class ClientsController extends Controller
             $client = new Client();
             $client->user_id = \Auth::user()->id;
             $client->email = $request->email;
-            $client->name = $request->firstname . ' ' . $request->lastname;
+            // $client->name = $request->firstname . ' ' . $request->lastname;
             $client->firstname = $request->firstname;
             $client->lastname = $request->lastname;
             $client->save();
