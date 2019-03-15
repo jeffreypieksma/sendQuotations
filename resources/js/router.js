@@ -8,11 +8,6 @@ import AuthService from './services/auth'
  |--------------------------------------------------------------------------|
  */
 
-// Dashboard
-import Basic from './views/admin/dashboard/Basic.vue'
-import Ecommerce from './views/admin/dashboard/Ecommerce.vue'
-import Finance from './views/admin/dashboard/Finance.vue'
-
 // Layouts
 import LayoutBasic from './views/layouts/LayoutBasic.vue'
 import LayoutHorizontal from './views/layouts/LayoutHorizontal.vue'
@@ -98,47 +93,17 @@ import NotFoundPage from './views/errors/404.vue'
 
 import Home from './views/front/Home.vue'
 
+/*
+ |--------------------------------------------------------------------------
+ | Custom Views
+ |--------------------------------------------------------------------------|
+ */
+
+import Dashboard from './views/admin/Dashboard.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
-
-  /*
-   |--------------------------------------------------------------------------
-   | Layout Routes for DEMO
-   |--------------------------------------------------------------------------|
-   */
-
-  {
-    path: '/admin/layouts',
-    component: LayoutBasic,
-    children: [
-      {
-        path: 'sidebar',
-        component: Basic
-      }
-    ]
-  },
-  {
-    path: '/admin/layouts',
-    component: LayoutHorizontal,
-    children: [
-      {
-        path: 'horizontal',
-        component: Basic
-      }
-    ]
-  },
-  {
-    path: '/admin/layouts',
-    component: LayoutIconSidebar,
-    children: [
-      {
-        path: 'icons-sidebar',
-        component: Basic
-      }
-    ]
-  },
-
   /*
    |--------------------------------------------------------------------------
    | Frontend Routes
@@ -169,148 +134,9 @@ const routes = [
     children: [
       // Dashboard
       {
-        path: 'dashboard/basic',
-        component: Basic,
+        path: 'dashboard',
+        component: Dashboard,
         name: 'dashboard'
-      },
-      {
-        path: 'dashboard/ecommerce',
-        component: Ecommerce
-      },
-      {
-        path: 'dashboard/finance',
-        component: Finance
-      },
-
-      // Basic UI
-      {
-        path: 'basic-ui/buttons',
-        component: Buttons
-      },
-      {
-        path: 'basic-ui/cards',
-        component: Cards
-      },
-      {
-        path: 'basic-ui/typography',
-        component: Typography
-      },
-      {
-        path: 'basic-ui/tables',
-        component: Tables
-      },
-
-      {
-        path: 'basic-ui/progress-bars',
-        component: ProgressBar
-      },
-
-      // Components
-      {
-        path: 'components/vue-tabs',
-        component: VueTabs
-      },
-      {
-        path: 'components/vue-collapse',
-        component: VueCollapse
-      },
-      {
-        path: 'components/notifications',
-        component: Notifications
-      },
-      {
-        path: 'components/vue-dropzone',
-        component: VueDropzone
-      },
-      {
-        path: 'components/sweet-modals',
-        component: SweetModals
-      },
-      {
-        path: 'components/vue-tables',
-        component: VueTable
-      },
-      {
-        path: 'components/vue-carousel',
-        component: VueCarousel
-      },
-      {
-        path: 'components/tooltips',
-        component: VueTooltips
-      },
-
-      // Charts
-      {
-        path: 'charts/chartjs',
-        component: Chartjs
-      },
-      {
-        path: 'charts/gauges',
-        component: Gauges
-      },
-
-      //  Icons
-      {
-        path: 'icons/fontawesome',
-        component: Fontawesome
-      },
-      {
-        path: 'icons/fpsline',
-        component: Fpsline
-      },
-      {
-        path: 'icons/icomoon',
-        component: IcoMoon
-      },
-      {
-        path: 'icons/line',
-        component: Line
-      },
-      {
-        path: 'icons/meteo',
-        component: Meteo
-      },
-
-      // Forms
-      {
-        path: 'forms/general',
-        component: General
-      },
-      {
-        path: 'forms/advanced',
-        component: Advanced
-      },
-      {
-        path: 'forms/layouts',
-        component: Layouts
-      },
-      {
-        path: 'forms/vuelidate',
-        component: Vuelidate
-      },
-      {
-        path: 'forms/vee-validate',
-        component: VeeValidate
-      },
-
-      // Gallery
-      {
-        path: 'gallery/image',
-        component: ImageGallery
-      },
-      {
-        path: 'gallery/video',
-        component: VideoGallery
-      },
-
-      // Users
-      {
-        path: 'users/profile',
-        component: Profile
-      },
-      {
-        path: 'users/all',
-        component: Users
       },
       //Clients
       {
@@ -338,32 +164,8 @@ const routes = [
         path: 'quotations/view/:id',
         component: Quotation
       },
-
-
-      // Apps
-      {
-        path: 'apps/mailbox',
-        component: MailboxApp
-      },
-      {
-        path: 'apps/todos',
-        component: TodosApp
-      },
-
-      // Settings
-      {
-        path: 'settings',
-        component: Settings
-      }
     ]
   },
-
-  /*
-   |--------------------------------------------------------------------------
-   | Auth & Registration Routes
-   |--------------------------------------------------------------------------|
-   */
-
   {
     path: '/',
     component: LayoutLogin,
@@ -380,50 +182,6 @@ const routes = [
       }
     ]
   },
-
-  // Demo Pages
-  {
-    path: '/admin/pages',
-    component: LayoutLogin,
-    children: [
-      {
-        path: 'login',
-        component: Login
-      },
-      {
-        path: 'register',
-        component: Register
-      }
-    ]
-  },
-  {
-    path: '/admin/pages',
-    component: LayoutLogin2,
-    children: [
-      {
-        path: 'login-2',
-        component: Login
-      },
-      {
-        path: 'register-2',
-        component: Register
-      }
-    ]
-  },
-  {
-    path: '/admin/pages',
-    component: LayoutLogin3,
-    children: [
-      {
-        path: 'login-3',
-        component: Login
-      },
-      {
-        path: 'register-3',
-        component: Register
-      }
-    ]
-  },  
   //  DEFAULT ROUTE
   { path: '*', component: NotFoundPage }
 ]
